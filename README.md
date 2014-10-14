@@ -48,25 +48,20 @@ cordova plugin rm com.ange724.cordova.plugins.custominappbrowserplugin
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
-        
-	<!— camera preview canvas —>
-        <canvas id="camera" width="352" height="288" style="border:2px"></canvas>
-        
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>
-        
-        <script>
-            document.addEventListener("deviceready", function() {
             
-		    var ref = window.open('http://apache.org', '_blank', '');
-		    ref.show();
-            });
+            document.addEventListener("deviceready", function() {
+                                      
+                                      var ref = window.open('http://apache.org', '_blank', '');
+                                      ref.show();
+                                      });
         </script>
     </body>
 </html>
+
 ```
 
 ## Contributing

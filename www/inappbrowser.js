@@ -1,4 +1,4 @@
-cordova.define("org.apache.cordova.inappbrowser.inappbrowser", function(require, exports, module) { /*
+cordova.define("com.ange724.cordova.plugins.custominappbrowserplugin.inappbrowser", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
