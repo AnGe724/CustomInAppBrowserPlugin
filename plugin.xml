@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.ek.plugins.cameraplugin"
+    version="1.0.0">
+
+    <name>CustomInAppBrowserPlugin</name>
+	<description>Cordova custom inappbrowser plugin for iOS</description>
+    <engines>
+        <engine name="cordova" version=">=3.1.0" />
+    </engines>
+	
+    <js-module src="www/inappbrowser.js" name="inappbrowser">
+        <clobbers target="window.open" />
+    </js-module>
+	<license>AnGe724</license>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="InAppBrowser">
+                <param name="ios-package" value="CDVInAppBrowser" /> 
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVInAppBrowser.h" />
+	    <source-file src="src/ios/CDVInAppBrowser.m" />
+	    
+		<resource-file src="src/ios/Resources/ic_action_previous_item.png" />
+
+	    <framework src="CoreGraphics.framework" />
+
+    </platform>
+</plugin>
