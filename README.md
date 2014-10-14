@@ -24,7 +24,7 @@ cordova plugin add https://github.com/AnGe724/CustomInAppBrowserPlugin.git && co
 ### Removing the Plugin from your project
 Through the [Command-line Interface][CLI]:
 ```bash
-cordova plugin rm com.keith.cordova.plugin.canvascamera
+cordova plugin rm com.ange724.cordova.plugins.custominappbrowserplugin
 ```
 
 ## Full Example
